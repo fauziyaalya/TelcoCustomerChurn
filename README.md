@@ -1,4 +1,4 @@
-# Telco-Customer-Churn
+# Telco Customer Churn
 Telco Company is a company engaged in the information technology services, communications and telecommunications networks.
 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
