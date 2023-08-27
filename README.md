@@ -1,16 +1,19 @@
-# Telco Customer Churn
-
+# Telco-Customer-Churn
 Telco Company is a company engaged in the information technology services, communications and telecommunications networks.
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
 
 # Use Case
-* Use Case Summary
+* *Use Case Summary*
 
 
-**Objective Statement :**
+* *Objective Statement* :
+
     * Get business insight about how many customer who churn or not churn
     * Get business insight about how many female and male in churn or not churn customer
     * Get business insight about how many customer who has a partner, has dependent or not, and old age or not
@@ -21,7 +24,7 @@ Telco Company is a company engaged in the information technology services, commu
     * Build models using machine learning to predict customer churn
     
     
-**Challanges :**
+* *Challanges* :
     * Large size of data, can not maintain by excel spreadsheet
     * Fill in the missing value in the dataset
     * Change the data type of column which doesn't match
@@ -29,7 +32,7 @@ Telco Company is a company engaged in the information technology services, commu
 
 
 
-**Methodology / Analytic Technique :**
+* *Methodology / Analytic Technique* :
     * Descriptive analysis
         * Describe the information such as, min/max value of each column, average, and the total count of data contained in each column. We also describe the distribution of the numerical data.
     * Graph analysis
@@ -38,13 +41,15 @@ Telco Company is a company engaged in the information technology services, commu
         * Logistic regression
 
 
-**Business Benefit:**
+* *Business Benefit*:
+
     * Gain insight to keep customers from churn through modification of benefits/features provided to these customers
     * Gain insight to improve the quality of company services so that customers remain loyal and gain more profit for the company
     * Build models using machine learning to predict customer churn
 
 
-**Expected Outcome:**
+* *Expected Outcome*:
+
     * Know how many customer who churn or not churn
     * Know how many female and male in churn or not churn customer
     * Know how many customer who has a partner, has dependent or not, and old age or not
@@ -68,11 +73,11 @@ Telco Company is a company engaged in the information technology services, commu
 # Data Understanding
 
 
-**Source Data:**
+* *Source Data*:
     * The dataset used is data from https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset
     * The raw data contains 7043 rows (customers) and 21 columns (features).
 
-**Data Dictionary :**
+* *Data Dictionary* :
     * customerID : Customer ID
     * gender : Whether the customer is a male or a female (Male, Female)
     * SeniorCitizen : Whether the customer is a senior citizen or not (1, 0)
@@ -98,7 +103,7 @@ Telco Company is a company engaged in the information technology services, commu
 
 # Data Preparation
 
-**Code use:**
+* *Code use*:
     * Python 3.9.7
     * Package: Pandas, Numpy, Matplotlib, Seaborn, Sklearn, Warning and Feature Engine
 
@@ -189,7 +194,7 @@ Telco Company is a company engaged in the information technology services, commu
   In our opinion, DSL service is a superior service, as seen from the data churn No with the largest percentage, namely DSL at 33%.
   In our opinion, Fiber Optic service is a service that is not good, this can be seen from the churn value of yes (leaving our service) of 59%. So, every customer who leaves our service (Churn == Yes) has used Fiber Optic and Fiber Optic is worth the biggest
 
-  * How many customers churn and don't churn from Online Backup
+  * *How many customers churn and don't churn from Online Backup*
   
   ![9 churn vs online backup](https://user-images.githubusercontent.com/101789879/200107442-322fa267-d92d-43e0-9074-8b43951e1c8d.jpg)
   
@@ -313,7 +318,7 @@ Telco Company is a company engaged in the information technology services, commu
   * False Negative of 95 (meaning as many as 95 people who did not Churn, wrongly predicted Churn)
 
   
-  * Accuracy, Precision, Recall
+  * *Accuracy, Precision, Recall*
   
   ![7 Accuracy, Precision, Recall](https://user-images.githubusercontent.com/101789879/200109144-7dfbfa21-5056-46f7-9624-80faf2cfbc86.jpg)
   
@@ -345,7 +350,7 @@ Telco Company is a company engaged in the information technology services, commu
   * False Positive of 153 (meaning as many as 153 people who Churn, incorrectly predicted No Churn)
   * False Negative of 95 (meaning as many as 95 people who did not Churn, wrongly predicted Churn)
   
-  **Accuracy, Precision, Recall**
+  * Accuracy, Precision, Recall
   
   ![10 Accuracy, Precision, Recall](https://user-images.githubusercontent.com/101789879/200109471-4b10ba5f-8bef-4dbe-b74b-9c321260005a.jpg)
   
@@ -373,71 +378,71 @@ From the results of good accuracy, the model chosen is logistic regression using
 
 # Result
 
-How many customer Churn, who has a partner, has dependent or not, and old age or not?
-* Partners:
+*How many customer Churn, who has a partner, has dependent or not, and old age or not*?
+* *Partners*:
 
 Out of a total of 1869 customer churn :
 
 customer has no partner as much as 55%, customer who has a partner 30%, unknown 13%
 
-**Dependent**
+* *Dependent*:
 
 Out of a total of 1869 customers churn :
 
 customer has no dependents as much as 70%, customer have a dependent 15%, unknown 13%
 
-**Senior Citizens**
+* *Senior Citizens* :
 
 Out of the total 1869 customer churn :
 
 non-elderly customers as much as 64%, elderly customers as much as 21%, Unknown 13%
 
-How many Churn customers used additional service
+*How many Churn customers used additional service*
 
-**Telephone Service**
+* *Telephone Service*:
 
 Out of a total of 1869 customer churn :
 
 91% of customers used Telephone Service, 9% not used Telephone Service
 
-**Multiple Lines**
+* *Multiple Lines*:
 
 of a total of 1869, subscribed to Multiple Lines 39% | unsubscribed Multiple Lines 39% | do not have telephone service by 8% | customers whose data is unknown 14%
 
-**Internet services**
+* *Internet services*:
 
 of 1869 total, 22% DSL subscription | 59% Fiber Optic subscription | don't subscribe to internet service by 5% | unknown data 14%
 
 
-**Online Backup**
+* *Online Backup*
 
 Of the 1869 customers whose Churn is Yes, as many as 57% of customers do not subscribe to Online Backup. Maybe they don't know the Online Backup feature. as much as 5.2% do not have an internet connection. A total of 23.7% subscribed and 13.4% unknown status.
 
-**Device Protection**
+* *Device Protection*
 
 Of the 1869 customers whose Churn is Yes, as many as 55% of customers do not subscribe to Device Protection. Maybe you don't know the device protection feature. as much as 5.2% do not have an internet connection. A total of 24.9% subscribed and 13% unknown status.
 
-**TechSupport**
+* *TechSupport*
 
 Of the 1869 customers whose Churn is Yes, as many as 66% of customers have not done Tech Support. Probably those customers found several technical issues and was not able to resolve by them self.
 
-**StreamingTV**
+* *StreamingTV*
 
 not using their internet service for streaming tv 43%, do not have internet service by 5.2%, subscribe to tech support 37.2, unknowns of 13.9%
 
-**StreamingMovies**
+* *StreamingMovies*
 
 not using their internet service for streaming movies 43.4%, do not have internet service by 5.2%, subscribe to tech support 37.2%, unknowns of 13.96%
 
-**Papperless Billing**
+* *Papperless Billing*
 
 of a total of 1869, billing without receipts 25%, with 74% receipt
 
-**How long customer churn used service who has churn**
+*How long customer churn used service who has churn*
 
 from a total of 1869 costumer who churn, use month to month 88% | one year 8% | two years 2%
 
-**5 feature or facility that influenced customer to churn most.**
+*5 feature or facility that influenced customer to churn most*. 
 
 based on feature or variable importance, we obtaine the following ordered by the most likely influencing customer to churn, that is :  
         
@@ -451,13 +456,13 @@ based on feature or variable importance, we obtaine the following ordered by the
         
         5. fiber optic
 
-**Machine Learning**
+* *Machine Learning*
 
 From the third model that has been tried/done, the best model with the highest accuracy is the With CV and Hyperparameter Tuning model with training data accuracy of 79.9%, and testing data of 82.3%
 
 ## Action / Recommendation
 
-**Suggestions for facilities :**
+*Suggestions for facilities* :
 
 * recommendations for FiberOptic,
 
