@@ -11,7 +11,6 @@ Telco Company is a company engaged in the information technology services, commu
 
 
 **Objective Statement :**
-
     * Get business insight about how many customer who churn or not churn
     * Get business insight about how many female and male in churn or not churn customer
     * Get business insight about how many customer who has a partner, has dependent or not, and old age or not
@@ -40,14 +39,12 @@ Telco Company is a company engaged in the information technology services, commu
 
 
 **Business Benefit:**
-
     * Gain insight to keep customers from churn through modification of benefits/features provided to these customers
     * Gain insight to improve the quality of company services so that customers remain loyal and gain more profit for the company
     * Build models using machine learning to predict customer churn
 
 
 **Expected Outcome:**
-
     * Know how many customer who churn or not churn
     * Know how many female and male in churn or not churn customer
     * Know how many customer who has a partner, has dependent or not, and old age or not
